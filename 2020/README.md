@@ -1,6 +1,6 @@
 # Disciplina de 2020-01
 
-## Ementa da Disciplina: Estagio II
+## Ementa da Disciplina: Estagio I
 
 **1. VP1**
    - Configuração Ferramenta de Controle de Versão - [GITHUB,git e tortoisegit](https://github.com/mbacefor)
