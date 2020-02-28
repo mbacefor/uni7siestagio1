@@ -71,3 +71,11 @@ function create() {
 ```
     hs    
 ```
+
+
+https://phaser.io/tutorials/getting-started-phaser3/part7
+https://www.codeandweb.com/texturepacker/tutorials/how-to-create-sprite-sheets-for-phaser3?utm_source=ad&utm_medium=banner&utm_campaign=phaser-2018-10-16
+https://github.com/photonstorm/phaser3-project-template
+https://github.com/TypeStrong/ts-loader
+https://github.com/Microsoft/TypeScriptSamples/tree/master/react-flux-babel-karma
+  
