@@ -5,6 +5,7 @@
 **1. VP1**
    - Configuração Ferramenta de Controle de Versão - [GITHUB,git e tortoisegit](https://github.com/mbacefor) - OK
      - [Curso de GIT para Iniciantes](https://www.udemy.com/git-e-github-para-iniciantes/)
+   - Phaser 3
    - Planejamento Projeto - [Scrum]  e [XMIND]
    - Prototipação do Projeto - [draw.io]
    - Elaboração Arquitetura
