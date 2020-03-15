@@ -5,6 +5,7 @@ import groundImg from "./assets/platform.png";
 import starImg from "./assets/star.png";
 import bombImg from "./assets/bomb.png";
 import dudeImg from "./assets/dude.png";
+import pessoasImg from "./assets/pessoas.png"
 
 
 var config = {
@@ -26,6 +27,7 @@ var config = {
 };
 
 var player;
+var playerMarcelo;
 var stars;
 var bombs;
 var platforms;
@@ -43,6 +45,8 @@ function preload() {
   this.load.image('star', starImg);
   this.load.image('bomb', bombImg);
   this.load.spritesheet('dude', dudeImg, { frameWidth: 32, frameHeight: 48 });
+  this.load.spritesheet('pessoas', pessoasImg, { frameWidth: 48, frameHeight: 48 });
+
 }
 
 function create() {
@@ -63,10 +67,17 @@ function create() {
 
   // The player and its settings
   player = this.physics.add.sprite(100, 450, 'dude');
+  playerMarcelo = this.physics.add.sprite(200, 450, 'pessoas');
+
 
   //  Player physics properties. Give the little guy a slight bounce.
   player.setBounce(0.2);
   player.setCollideWorldBounds(true);
+
+   //  Player physics properties. Give the little guy a slight bounce.
+   playerMarcelo.setBounce(0.2);
+   playerMarcelo.setCollideWorldBounds(true);
+  
 
   //  Our player animations, turning, walking left and walking right.
   this.anims.create({
@@ -88,6 +99,28 @@ function create() {
     frameRate: 10,
     repeat: -1
   });
+
+  //  Our player animations, turning, walking left and walking right.
+  this.anims.create({
+    key: 'leftMarcelo',
+    frames: this.anims.generateFrameNumbers('pessoas', { start: 15, end: 17 }),
+    frameRate: 10,
+    repeat: -1
+  });
+
+  this.anims.create({
+    key: 'turnMarcelo',
+    frames: [{ key: 'pessoas', frame: 4 }],
+    frameRate: 20
+  });
+
+  this.anims.create({
+    key: 'rightMarcelo',
+    frames: this.anims.generateFrameNumbers('pessoas', { start: 27, end: 29 }),
+    frameRate: 10,
+    repeat: -1
+  });
+
 
   //  Input Events
   cursors = this.input.keyboard.createCursorKeys();
@@ -114,14 +147,18 @@ function create() {
 
   //  Collide the player and the stars with the platforms
   this.physics.add.collider(player, platforms);
+  this.physics.add.collider(playerMarcelo, player);
+  this.physics.add.collider(playerMarcelo, platforms);
   this.physics.add.collider(stars, platforms);
   this.physics.add.collider(bombs, platforms);
   this.physics.add.collider(bombs, bombs);
 
   //  Checks to see if the player overlaps with any of the stars, if he does call the collectStar function
   this.physics.add.overlap(player, stars, collectStar, null, this);
-
   this.physics.add.collider(player, bombs, hitBomb, null, this);
+  this.physics.add.overlap(playerMarcelo, stars, collectStar, null, this);
+  this.physics.add.collider(playerMarcelo, bombs, hitBomb, null, this);
+
 }
 
 function update() {
@@ -131,22 +168,31 @@ function update() {
 
   if (cursors.left.isDown) {
     player.setVelocityX(-160);
-
     player.anims.play('left', true);
+
+    playerMarcelo.setVelocityX(-160);
+    playerMarcelo.anims.play('leftMarcelo', true);
+
   }
   else if (cursors.right.isDown) {
     player.setVelocityX(160);
-
     player.anims.play('right', true);
+    playerMarcelo.setVelocityX(160);
+    playerMarcelo.anims.play('rightMarcelo', true);
   }
+  
+
   else {
     player.setVelocityX(0);
-
     player.anims.play('turn');
+    playerMarcelo.setVelocityX(0);
+    playerMarcelo.anims.play('turnMarcelo');
   }
+
 
   if (cursors.up.isDown && player.body.touching.down) {
     player.setVelocityY(-330);
+    playerMarcelo.setVelocityY(-330);
   }
 }
 
@@ -176,12 +222,14 @@ function collectStar(player, star) {
   }
 }
 
-function hitBomb(player, bomb) {
+function hitBomb(player1, bomb) {
   this.physics.pause();
 
-  player.setTint(0xff0000);
+  player1.setTint(0xff0000);
 
-  player.anims.play('turn');
+  if (player1==player)
+    player1.anims.play('turn');
+  else player1.anims.play('turnMarcelo');
 
   gameOver = true;
 }
