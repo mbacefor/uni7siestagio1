@@ -15,6 +15,8 @@
 
    - Veja qual é o terceiro comentário (histórico) que existe no arquivo uni7siestagio1\2020\Alunos\README.md do repositório.
 
+     * Adição do nome do aluno "Artur Lima Queiroz"
+     
      
 
 
