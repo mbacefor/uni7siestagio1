@@ -13,7 +13,7 @@
 
    - Acesse o arquivo uni7siestagio1\2020\Alunos\README.md e adicione o seu nome com o nome do projeto: "Meu nome é:"+<seu nome completo>-<nome do projeto>
 
-   - Veja qual é o terceiro comentário (histórico) que existe no arquivo README.md do repositório.
+   - Veja qual é o terceiro comentário (histórico) que existe no arquivo uni7siestagio1\2020\Alunos\README.md do repositório.
 
      
 
