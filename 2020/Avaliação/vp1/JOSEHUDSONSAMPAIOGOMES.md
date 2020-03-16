@@ -2,7 +2,7 @@
 | ------------------------------------------------------------ | :------------------------------------- | :------------------- |
 | **Curso:**                                                   | Sistema de Informação                  |                      |
 | **Disciplina:** Estágio I                                    | **Professor (a):**Marcelo Bezerra      | **Data:** 16/03/2020 |
-| **Aluno:**                                                   |                                        | **Avaliação:**       |
+| **Aluno:**                                                   | **jose hudson sampaio gomes **         | **Avaliação:**       |
 |                                                              | **V1 – Primeira Chamada**              |                      |
 
 ### **Questão 1. **Controle de versão - GIT
@@ -10,8 +10,8 @@
    - Crie nesta mesma pasta um documento com o mesmo formato mudando para o seu nome completo e responda a prova.
 
    - Acesse o arquivo uni7siestagio1\2020\Alunos\README.md e adicione o seu nome com o nome do projeto: "Meu nome é:"+<seu nome completo>-<nome do projeto>
-    R: Adicionado novo aluno, commit de jhudsonsg
    - Veja qual é o terceiro comentário (histórico) que existe no arquivo README.md do repositório.
+    R: Adicionado novo aluno, commit de jhudsonsg
 
      
 
