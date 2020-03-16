@@ -15,9 +15,8 @@
 
    - Veja qual é o terceiro comentário (histórico) que existe no arquivo README.md do repositório.
 
-   - Adicione o seu nome no arquivo README.md na pasta projetos. Seu nome deve ser colocado no projeto que você vai participar. Se não tiver o projeto crie.
-
      
+
 
 ### **Questão 2. **Github
 
