@@ -37,9 +37,8 @@
 
 ### **Questão 3. **Phaser
 
-- Escolha uma das funcionalidades que você vai implementar e faça um descrição do que vai ser essa funcionalidades, com seu cenários de uso e regras de negócio.
-
-
+- Execute a aplicação (uni7siestagio1\2020\TutorialPhaserNPM) no Visual Code;
+- Ajuste o código para adicionar um novo personagem. Use o sprite pessoas.png. Salve o seu ajuste no github.
 
 
 
