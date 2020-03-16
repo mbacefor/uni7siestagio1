@@ -67,6 +67,7 @@ function create() {
   
   players.push(this.physics.add.sprite(100, 450, 'dude'));
   players.push(this.physics.add.sprite(200, 450, 'pessoas'));
+  players.push(this.physics.add.sprite(300, 450, 'pessoas'));
 
   //  Player physics properties. Give the little guy a slight bounce.
   players.forEach(function (item, indice, array) {
@@ -116,6 +117,30 @@ function create() {
     frameRate: 10,
     repeat: -1
   });
+
+  /***************************************************************************************
+   * Nova personagem, jhudsonsg
+   ***************************************************************************************/
+  this.anims.create({
+    key: 'left2',
+    frames: this.anims.generateFrameNumbers('pessoas', { start: 18, end: 20 }),
+    frameRate: 10,
+    repeat: -1
+  });
+
+  this.anims.create({
+    key: 'turn2',
+    frames: [{ key: 'pessoas', frame: 7 }],
+    frameRate: 20
+  });
+
+  this.anims.create({
+    key: 'right2',
+    frames: this.anims.generateFrameNumbers('pessoas', { start: 30, end: 32 }),
+    frameRate: 10,
+    repeat: -1
+  });
+  /*************************************************************************************** */
 
   //  Input Events
   cursors = this.input.keyboard.createCursorKeys();
