@@ -10,9 +10,9 @@
 **2. VP2**
 
    - Planejamento Projeto - [Scrum]  e [ https://trello.com/] - OK
-   - Prototipação do Projeto - [draw.io] 
-   - Elaboração Arquitetura
-   - Implementação
+   - Prototipação do Projeto - [draw.io]  - Ok
+   - Elaboração Arquitetura - OK
+   - Implementação - Iniciada.
 
 **3. VP3**
    - Implementação
