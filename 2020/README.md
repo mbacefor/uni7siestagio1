@@ -13,6 +13,9 @@
    - Prototipação do Projeto - [draw.io]  - Ok
    - Elaboração Arquitetura - OK
    - Implementação - Iniciada.
+        - Sprint 1.
+        - Sprint 2. 
+             - Heroku
 
 **3. VP3**
    - Implementação
