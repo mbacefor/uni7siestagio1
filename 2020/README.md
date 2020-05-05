@@ -14,10 +14,20 @@
    - Elaboração Arquitetura - OK
    - Implementação - Iniciada.
         - Sprint 1.
+
         - Sprint 2. 
+
              - Heroku
 
+        - Sprint 3.
+             
+        - Sprint 4. 
+
+        - Sprint 5. 
+             
+
 **3. VP3**
+
    - Implementação
    - Testes
 
